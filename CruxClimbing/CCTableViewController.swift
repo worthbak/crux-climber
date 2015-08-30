@@ -55,7 +55,7 @@ class CCTableViewController: UITableViewController {
     // Configure the cell...
     
     if indexPath.row == tableView.numberOfRowsInSection(0) - 1 {
-      cell.textLabel?.text = "add an excercise"
+      cell.textLabel?.text = "add an exercise"
       cell.textLabel?.textColor = UIColor.grayColor()
       cell.textLabel?.textAlignment = .Center
       

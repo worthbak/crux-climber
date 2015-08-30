@@ -80,6 +80,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		383D3C071B93A07A003D6BE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		3899412B1B910EDD00B1D774 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +115,7 @@
 				3899416B1B91192600B1D774 /* NewExcerciseViewController.swift */,
 				389941691B91140C00B1D774 /* TimerViewController.swift */,
 				389941671B9111DA00B1D774 /* WorkoutViewController.swift */,
+				383D3C071B93A07A003D6BE3 /* Model */,
 				3899413B1B910EDD00B1D774 /* Main.storyboard */,
 				3899413E1B910EDD00B1D774 /* Assets.xcassets */,
 				389941401B910EDD00B1D774 /* LaunchScreen.storyboard */,
@@ -493,6 +501,7 @@
 				3899415E1B910EDE00B1D774 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3899415F1B910EDE00B1D774 /* Build configuration list for PBXNativeTarget "CruxClimbingTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +510,7 @@
 				389941611B910EDE00B1D774 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		389941621B910EDE00B1D774 /* Build configuration list for PBXNativeTarget "CruxClimbingUITests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +519,7 @@
 				389941641B910EDE00B1D774 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
