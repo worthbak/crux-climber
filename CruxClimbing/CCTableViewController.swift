@@ -8,6 +8,10 @@
 
 import UIKit
 
+enum CCTableViewCellReuseIdentifiers: String {
+  case GenericCell
+}
+
 class CCTableViewController: UITableViewController {
   
   override func viewDidLoad() {
@@ -50,7 +54,10 @@ class CCTableViewController: UITableViewController {
   }
   
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+    let cell = tableView.dequeueReusableCellWithIdentifier(
+      CCTableViewCellReuseIdentifiers.GenericCell.rawValue,
+      forIndexPath: indexPath
+    )
     
     // Configure the cell...
     
