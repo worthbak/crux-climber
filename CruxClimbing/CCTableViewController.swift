@@ -18,22 +18,26 @@ class CCTableViewController: UITableViewController {
   }
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    if segue.identifier == "TimerSegue" {
+    guard let identifier = segue.identifier else { return }
+    
+    switch identifier {
+    case "TimerSegue":
       if let timer = segue.destinationViewController as? TimerViewController {
         timer.count = self.tableView.numberOfRowsInSection(0) - 1
       }
+    default:
+      return
     }
+    
   }
   
   // MARK: - Table view data source
   
   override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-    // #warning Incomplete implementation, return the number of sections
     return 1
   }
   
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    // #warning Incomplete implementation, return the number of rows
     return 3
   }
   
